@@ -1,0 +1,5 @@
+install.packages("RCurl")
+library(RCurl)
+
+x <- getURL("https://raw.githubusercontent.com/Efsilvaa/testRepo/master/galton.csv")
+y <- read.csv(text = x)
